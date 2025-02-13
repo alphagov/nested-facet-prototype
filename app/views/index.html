@@ -1,0 +1,74 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+            {{ serviceName }}
+        </h1>
+
+        <p class="govuk-body-lead">This prototype demonstrates anticipated scenarios for the nested facet component.</p>
+
+        <hr class="govuk-section-break govuk-section-break--visible">
+
+        <strong class="govuk-tag app-tag govuk-tag--green govuk-!-margin-bottom-4 govuk-!-margin-top-4">
+            HTML + CSS OK
+        </strong>
+
+        <strong class="govuk-tag app-tag govuk-tag--yellow govuk-!-margin-bottom-4 govuk-!-margin-top-4">
+            JS doesn't run
+        </strong>
+
+        <h2 class="govuk-heading-m">JavaScript does not run</h2>
+        <p class="govuk-body">There are <a href="https://www.kryogenix.org/code/browser/everyonehasjs.html">many
+            reasons</a> why JavaScript may not run for a user. GDS
+            previously
+            found that
+            <a href="https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/">around
+                1 in 93 users will miss out on a JavaScript enhancement</a>. For this reason, the Service Manual
+            describes <a
+                    href="https://www.gov.uk/service-manual/technology/using-progressive-enhancement">the need to
+                use
+                progressive enhancement</a> to ensure these users are included.</p>
+
+        <p class="govuk-body">
+            Where JavaScript has not run, we cannot link the selects.
+        </p>
+
+        <p class="govuk-body">
+            <a href="/javascript-does-not-run" role="button" draggable="false" class="govuk-button"
+               data-module="govuk-button">
+                Try the component where JavaScript doesn't run
+            </a>
+        </p>
+
+        <hr class="govuk-section-break govuk-section-break--visible">
+
+        <strong class="govuk-tag app-tag govuk-tag--green govuk-!-margin-bottom-4 govuk-!-margin-top-4">
+            HTML + CSS OK
+        </strong>
+
+        <strong class="govuk-tag app-tag govuk-tag--green govuk-!-margin-bottom-4 govuk-!-margin-top-4">
+            JS runs OK
+        </strong>
+
+        <h2 class="govuk-heading-m">JavaScript runs</h2>
+
+        <p class="govuk-body">
+            When JavaScript runs, we link the state of the child facet to the parent facet.
+        </p>
+
+        <p class="govuk-body">
+            <a href="/javascript-runs" role="button" draggable="false" class="govuk-button"
+               data-module="govuk-button">
+                Try the component with JavaScript running
+            </a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}
